@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Maicon Fang - SDET Resume</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; line-height: 1.6; }
+        h1 { color: #2c3e50; }
+        pre { background-color: #f4f4f4; padding: 15px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Maicon Fang - Software Development Engineer in Test (SDET)</h1>
+    <pre>                                              Maicon Fang  | (506) 232-4277  | maicon.fang @gmail.com  Maicon Fang  
+Software Development Engineer in Test (SDET)  
+ 
+Moncton, NB (Open to Remote Work)  
+(506) 232 -4277 ∙ maicon.fang@gmail.com  
+ 
+LinkedIn Profile: https://www.linkedin.com/in/maiconfang/   
+GitHub Profile: https://github.com/maiconfang?tab=repositories/  
+YouTube : https://www.youtube.com/@maiconfangitqa  
+ 
+ 
+PROFILE  
+Quality Assurance with 7+ years of experience in test automation and 3+ years in software development. Skilled in 
+crafting robust test automation frameworks (Selenium WebDriver, Cypress) and leveraging data analysis to ensure 
+software quality. Proven ability to collaborate with stakeholders to translate domain knowledge into comprehensive 
+test strategies, facilitating seamless integrations and migrations. Adept at managing multiple projects concurrently 
+while meeting deadlines.  
+ 
+SKILLS & QUALIFICATIONS  
+Testing and Quality Assurance : Selenium WebDriver, Cypress,  REST Assured API , Mocha, Supertest,  JUnit, 
+JMeter, TestNG, Cucumber, Gherkin, Appium 2.0, WebdriverIO , Espresso  
+Development:  Java, Spring Framework, Hibernate, Python, C#, HTML5, CSS3, Angular, JavaScript, TypeScript , 
+Kotlin  
+Databases:  MySQL, PostgreSQL, Microsoft SQL Server, Oracle Database, Redis  
+Tools:  IntelliJ IDEA, Eclipse, VS Code, Postman API, Jira,  Confluence,  Bamboo, Android Studio , Jenkins, CI/CD  
+Methodologies:  Agile, Kanban, Scrum  
+Soft Skills:  Communication, Analytical Skills, Attention to Detail, Leadership  
+Languages:  English, Portuguese, Spanish  
+Emerging Technologies & Interests:  Playwright , AWS & GCP  
+ 
+ 
+ 
+PROFESSIONAL EXPERIENCE  
+QA TESTER                            2025  ̶  Current  
+BMM Testlabs , Dieppe , New Brunswick.  
+● Work closely with teams to ensure alignment with jurisdictional standards.  
+● Conduct functionality, usability, and regression testing for gaming products.  
+● Verify software configurations across multiple hardware platforms.  
+● Tested lottery game systems to meet customer and system requirements.  
+● Reviewed and provided feedback on over 500 test cases to improve clarity and effectiveness.  
+ 
+INTEGRATION & MIGRATION SPECIALIST ( QA | SOFTWARE DEVELOPMENT )              2022  ̶  2023  
+Cloud and More (Projects for client digital ecosystem enhancement) , Moncton, New Brunswick.  
+● Collaborated on the development and validation of test cases for integration and migration projects, 
+ensuring data accuracy and system functionality.  
+● Identified and resolved critical integration issues during development, preventing potential system downtime 
+and ensuring a smooth user experience.  
+● Created comprehensive test plans and test cases, ensuring thorough test coverage and improved software 
+quality.  
+● Provided mentorship to a fellow QA, guiding them in developing and implementing effective testing 
+strategies, including unit testing, API testing, exploratory testing .                                               Maicon Fang  | (506) 232-4277  | maicon.fang @gmail.com  ● Enhanced testing efficiency and effectiveness through strategic insights and guidance.  
+ 
+QA | SOFTWARE DEVELOPER                                                                                                     2020  ̶  2022  
+NTT DATA Business Solutions (Brazil) (Large IT consulting company) , Curitiba, Brazil.  
+● Performed user acceptance testing (UAT) , ensuring solutions met user requirements.  
+● Optimized processes to improve efficiency and productivity, achieving significant financial and operational 
+results.  
+● Improved front -end applications using Angular CLI, HTML, CSS, and Java, enhancing user workflows.  
+● Utilized RESTful APIs, SOAP services, and OData protocol to deliver step -by-step user documentation.  
+TEST ANALYST                                                                                                                         2014  ̶  2019  
+Velti Technology (Provider of mobile marketing and advertising services) , Curitiba, Brazil.  
+● Developed internal automation scripts and tools in Python and Java to accelerate regression cycles and 
+improve test reliability.  
+● Built test automation for API and UI layers using Cypress and REST Assured  
+● Familiar with using test metrics to identify quality patterns, inform risk analysis, and improve test coverage.  
+● Tailored consulting packages while ensuring high -quality service delivery through comprehensive testing 
+with JUnit, JMeter, and Selenium WebDriver.  
+● Developed and maintained a comprehensive test repository, ensuring thorough validation and clear 
+documentation of defects.  
+● Provided QA expertise during the development of consulting packages, ensuring functionality and usability 
+through testing with JUnit, JMeter, and Selenium WebDriver.  
+ 
+PROJECTS  
+The following projects showcase my expertise in Quality Assurance, test automation, and software development.  
+Task Manger Plus UI  
+A web -based task management system developed using Angular, TypeScript, and integrated with APIs (not 
+currently deployed due to costs). This project is based on a previous project, which you can explore here : 
+https://github.com/maiconfang/taskmanagerplus -ui. Future plans include enhancing this project and deploying the 
+API component.  
+ 
+ 
+YOUTUBE CHANNEL  
+Maicon Fang IT and Quality Assurance  
+Sharing knowledge on test automation and software development  
+YouTube Channel Link  
+● Video tutorials on topics such as Selenium WebDriver, Cypress, Java, TestNG, BDD with Cucumber, and 
+more, demonstrating real -world applications in test automation.   
+● Step-by-step guides on building automated test scripts, exploring various element location strategies, and 
+integrating testing frameworks.  
+● Aimed at helping QA professionals and developers enhance their test automation skills.  
+ 
+ 
+SELECTED EDUCATION ACCOMPLISHMENTS  
+Professional Master’s Degree in Software Engineering                                                                            2014  
+Federal University of Paraná, Curitiba, Brazil.  
+ 
+Bachelor’s Degree in Information Systems                                                                                                2010  
+Dinâmica das Cataratas University Centre, Cataratas do Iguaçu, Brazil.   
+ 
+ </pre>
+</body>
+</html>
