@@ -1,0 +1,303 @@
+/*
+  =================================
+  NOVOS ESTILOS GERAIS E LAYOUT
+  =================================
+*/
+
+/* Importa a fonte moderna Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --primary-color: #00897B; /* Verde Água (Teal) moderno para destaque */
+    --primary-light: #4DB6AC; /* Tom mais claro para detalhes */
+    --secondary-color: #f8f9fa; /* Fundo muito claro e limpo */
+    --text-color: #212529; /* Texto escuro quase preto */
+    --light-text-color: #6c757d; /* Texto cinza para detalhes */
+    --box-bg-color: #ffffff; /* Fundo dos cards */
+    --shadow-color: rgba(0, 0, 0, 0.08); /* Sombra suave */
+    --font-stack: 'Poppins', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-stack);
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary-light);
+    border-bottom: 1px solid var(--primary-light);
+}
+
+/* Container Principal do Currículo */
+.resume-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    background-color: var(--box-bg-color);
+    box-shadow: 0 10px 30px var(--shadow-color);
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 12px;
+    overflow: hidden; 
+}
+
+/* Cabeçalho */
+.header {
+    width: 100%;
+    /* Gradiente para um efeito mais moderno */
+    background: linear-gradient(135deg, var(--primary-color), #004d40); 
+    color: white;
+    padding: 40px 30px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.header h1 {
+    font-size: 2.8em;
+    font-weight: 700;
+    margin-bottom: 5px;
+    letter-spacing: 1.5px;
+}
+
+.header h2 {
+    font-size: 1.4em;
+    font-weight: 300;
+    opacity: 0.9;
+    margin-bottom: 10px;
+}
+
+/* Layout de Duas Colunas */
+.sidebar {
+    flex: 1;
+    background-color: #e8f5e9; /* Fundo levemente diferente para a sidebar */
+    padding: 30px 25px;
+    box-shadow: 3px 0 5px rgba(0, 0, 0, 0.05); 
+}
+
+.content-area {
+    flex: 2.5; /* Mais espaço para o conteúdo principal */
+    padding: 30px;
+}
+
+/* Títulos de Seção */
+.section {
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+
+.section:last-child {
+    border-bottom: none;
+}
+
+.section h3 {
+    font-size: 1.5em;
+    color: var(--text-color);
+    /* Linha de destaque para os títulos */
+    border-bottom: 3px solid var(--primary-light);
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 600;
+}
+
+.icon {
+    color: var(--primary-color);
+    font-size: 1.2em;
+}
+
+/*
+  =================================
+  ESTILOS DE CONTEÚDO
+  =================================
+*/
+
+/* Informações de Contato */
+.contact-info ul {
+    list-style: none;
+}
+
+.contact-info li {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-color);
+    font-size: 0.95em;
+}
+
+/* Perfil */
+.profile p {
+    font-size: 1em;
+    text-align: justify;
+    padding: 5px 0;
+    color: var(--light-text-color);
+}
+
+/* Habilidades (Skills) */
+.skills h3 {
+    color: var(--primary-color);
+}
+
+.skill-group {
+    margin-bottom: 15px;
+    padding-left: 15px;
+    border-left: 3px solid var(--primary-color);
+}
+
+.skill-group h4 {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.skill-group p {
+    font-size: 0.9em;
+    color: var(--light-text-color);
+    margin-top: 5px;
+}
+
+/* Experiência/Educação/Projetos - Card Style */
+.job-entry, .education-entry, .project-entry {
+    margin-bottom: 25px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: var(--box-bg-color);
+    /* Sombra para efeito 3D (Card) */
+    box-shadow: 0 4px 15px var(--shadow-color); 
+    border-left: 5px solid var(--primary-color); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito Hover (Transições) */
+.job-entry:hover, .project-entry:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.job-entry h4, .project-entry h4 {
+    font-size: 1.2em;
+    color: var(--text-color);
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.company, .institution {
+    font-style: italic;
+    color: var(--light-text-color);
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.95em;
+}
+
+.dates {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.job-entry ul {
+    list-style: none; 
+    margin-top: 10px;
+}
+
+.job-entry li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+    font-size: 0.95em;
+}
+
+.job-entry li:before {
+    content: "•";
+    color: var(--primary-color);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    position: absolute;
+    left: 0;
+}
+
+/* Projetos */
+.project-entry .link {
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+/* Rodapé */
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.8em;
+    color: var(--light-text-color);
+    border-top: 1px solid #e0e0e0;
+    margin-top: 0;
+}
+
+
+/*
+  =================================
+  RESPONSIVIDADE (MOBILE)
+  =================================
+*/
+@media (max-width: 992px) {
+    .resume-container {
+        flex-direction: column;
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .header {
+        border-radius: 0;
+        padding: 30px 20px;
+    }
+
+    .header h1 {
+        font-size: 2.2em;
+    }
+
+    .header h2 {
+        font-size: 1.2em;
+    }
+
+    .sidebar {
+        box-shadow: none;
+        border-bottom: 5px solid var(--primary-color); 
+        padding: 20px;
+    }
+
+    .content-area {
+        padding: 20px;
+    }
+    
+    .job-entry, .education-entry, .project-entry {
+        margin-bottom: 15px;
+        box-shadow: 0 2px 10px var(--shadow-color);
+    }
+    
+    .company, .institution {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .dates {
+        margin-top: 5px;
+    }
+}
