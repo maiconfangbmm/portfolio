@@ -1,292 +1,163 @@
-/*
-  =================================
-  NOVOS ESTILOS GERAIS E LAYOUT
-  =================================
-*/
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-
-:root {
-    --primary-color: #00897B; /* Verde Água (Teal) moderno para destaque */
-    --primary-light: #4DB6AC; /* Tom mais claro para detalhes */
-    --secondary-color: #f8f9fa; /* Fundo muito claro e limpo */
-    --text-color: #212529; /* Texto escuro quase preto */
-    --light-text-color: #6c757d; /* Texto cinza para detalhes */
-    --box-bg-color: #ffffff; /* Fundo dos cards */
-    --shadow-color: rgba(0, 0, 0, 0.08); /* Sombra suave */
-    --font-stack: 'Poppins', sans-serif;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: var(--font-stack);
-    background-color: var(--secondary-color);
-    color: var(--text-color);
-    line-height: 1.6;
-}
-
-a {
-    color: var(--primary-color);
-    text-decoration: none;
-    transition: color 0.3s ease, border-bottom 0.3s ease;
-}
-
-a:hover {
-    color: var(--primary-light);
-    border-bottom: 1px solid var(--primary-light);
-}
-
-/* Container Principal do Currículo */
-.resume-container {
-    max-width: 1200px;
-    margin: 30px auto;
-    background-color: var(--box-bg-color);
-    box-shadow: 0 10px 30px var(--shadow-color);
-    display: flex;
-    flex-wrap: wrap;
-    border-radius: 12px;
-    overflow: hidden; /* Garante que o box-shadow seja contido */
-}
-
-/* Cabeçalho */
-.header {
-    width: 100%;
-    background: linear-gradient(135deg, var(--primary-color), #004d40); /* Gradiente */
-    color: white;
-    padding: 40px 30px;
-    text-align: center;
-    margin-bottom: 0;
-}
-
-.header h1 {
-    font-size: 2.8em;
-    font-weight: 700;
-    margin-bottom: 5px;
-    letter-spacing: 1.5px;
-}
-
-.header h2 {
-    font-size: 1.4em;
-    font-weight: 300;
-    opacity: 0.9;
-    margin-bottom: 10px;
-}
-
-/* Layout de Duas Colunas */
-.sidebar {
-    flex: 1;
-    background-color: #e8f5e9; /* Fundo levemente diferente para a sidebar */
-    padding: 30px 25px;
-    /* Linha de separação vertical sutil */
-    box-shadow: 3px 0 5px rgba(0, 0, 0, 0.05); 
-}
-
-.content-area {
-    flex: 2.5; /* Mais espaço para o conteúdo principal */
-    padding: 30px;
-}
-
-/* Títulos de Seção */
-.section {
-    padding-bottom: 25px;
-    margin-bottom: 25px;
-}
-
-.section:last-child {
-    border-bottom: none;
-}
-
-.section h3 {
-    font-size: 1.5em;
-    color: var(--text-color);
-    border-bottom: 3px solid var(--primary-light);
-    padding-bottom: 8px;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-weight: 600;
-}
-
-.icon {
-    color: var(--primary-color);
-    font-size: 1.2em;
-}
-
-/*
-  =================================
-  ESTILOS DE CONTEÚDO
-  =================================
-*/
-
-/* Informações de Contato */
-.contact-info ul {
-    list-style: none;
-}
-
-.contact-info li {
-    margin-bottom: 12px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: var(--text-color);
-    font-size: 0.95em;
-}
-
-/* Perfil */
-.profile p {
-    font-size: 1em;
-    text-align: justify;
-    padding: 5px 0;
-    color: var(--light-text-color);
-}
-
-/* Habilidades (Skills) */
-.skills h3 {
-    color: var(--primary-color);
-}
-
-.skill-group {
-    margin-bottom: 15px;
-    padding-left: 15px;
-    border-left: 3px solid var(--primary-color);
-}
-
-.skill-group h4 {
-    font-size: 1.1em;
-    margin-bottom: 5px;
-    color: var(--text-color);
-    font-weight: 600;
-}
-
-.skill-group p {
-    font-size: 0.9em;
-    color: var(--light-text-color);
-    margin-top: 5px;
-}
-
-/* Experiência/Educação/Projetos - Card Style */
-.job-entry, .education-entry, .project-entry {
-    margin-bottom: 25px;
-    padding: 15px;
-    border-radius: 8px;
-    background-color: var(--box-bg-color);
-    box-shadow: 0 4px 15px var(--shadow-color);
-    border-left: 5px solid var(--primary-color); /* Linha de destaque */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.job-entry:hover, .project-entry:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-}
-
-.job-entry h4, .project-entry h4 {
-    font-size: 1.2em;
-    color: var(--text-color);
-    margin-bottom: 5px;
-    font-weight: 600;
-}
-
-.company, .institution {
-    font-style: italic;
-    color: var(--light-text-color);
-    margin-bottom: 8px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.95em;
-}
-
-.dates {
-    font-weight: 600;
-    color: var(--primary-color);
-}
-
-.job-entry ul {
-    list-style: none; /* Remove bullet points padrão */
-    margin-top: 10px;
-}
-
-.job-entry li {
-    position: relative;
-    padding-left: 20px;
-    margin-bottom: 8px;
-    font-size: 0.95em;
-}
-
-.job-entry li:before {
-    content: "•";
-    color: var(--primary-color);
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-    position: absolute;
-    left: 0;
-}
-
-/* Projetos */
-.project-entry .link {
-    margin-top: 10px;
-    font-size: 0.9em;
-}
-
-/* Rodapé */
-.footer {
-    width: 100%;
-    text-align: center;
-    padding: 15px;
-    font-size: 0.8em;
-    color: var(--light-text-color);
-    border-top: 1px solid #e0e0e0;
-    margin-top: 0;
-}
-
-
-/*
-  =================================
-  RESPONSIVIDADE (MOBILE)
-  =================================
-*/
-@media (max-width: 992px) {
-    .resume-container {
-        flex-direction: column;
-        margin: 0;
-        border-radius: 0;
-        box-shadow: none;
-    }
-
-    .header {
-        border-radius: 0;
-    }
-
-    .sidebar {
-        border-right: none;
-        box-shadow: none;
-        border-bottom: 5px solid var(--primary-color); /* Destaque em mobile */
-        padding: 20px;
-    }
-
-    .content-area {
-        padding: 20px;
-    }
-
-    .section {
-        margin-bottom: 15px;
-    }
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo de Maicon Fang - SDET</title>
     
-    .job-entry, .education-entry, .project-entry {
-        margin-bottom: 15px;
-        box-shadow: 0 2px 10px var(--shadow-color);
-    }
-    
-    .company, .institution {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-}
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1>Maicon Fang</h1>
+            <h2>Software Development Engineer in Test (SDET)</h2>
+            <p>Moncton, NB (Aberto a Trabalho Remoto)</p>
+        </div>
+    </header>
+
+    <main class="resume-container">
+        <section class="sidebar">
+            <section class="contact-info section">
+                <h3><i class="fas fa-address-card icon"></i> Contato</h3>
+                <ul>
+                    <li><i class="fas fa-phone-alt icon"></i> (506) 232-4277</li>
+                    <li><i class="fas fa-envelope icon"></i> maicon.fang@gmail.com</li>
+                    <li><i class="fab fa-linkedin icon"></i> <a href="https://www.linkedin.com/in/maiconfang/" target="_blank">LinkedIn Profile</a></li>
+                    <li><i class="fab fa-github icon"></i> <a href="https://github.com/maiconfang?tab=repositories/" target="_blank">GitHub Profile</a></li>
+                    <li><i class="fab fa-youtube icon"></i> <a href="https://www.youtube.com/@maiconfangitga" target="_blank">YouTube Channel</a></li>
+                </ul>
+            </section>
+
+            <section class="profile section">
+                <h3><i class="fas fa-user-circle icon"></i> Perfil</h3>
+                <p>Quality Assurance com **7+ anos** de experiência em automação de testes e **3+ anos** em desenvolvimento de software. Especialista na criação de frameworks robustos (Selenium WebDriver, Cypress) e análise de dados para garantir a qualidade. Habilidade comprovada em colaborar com stakeholders para traduzir o conhecimento de domínio em estratégias de teste abrangentes, facilitando integrações e migrações. Adepto a gerenciar múltiplos projetos concorrentemente, cumprindo prazos.</p>
+            </section>
+
+            <section class="skills section">
+                <h3><i class="fas fa-tools icon"></i> Habilidades e Qualificações</h3>
+                <div class="skill-group">
+                    <h4>Testes e QA</h4>
+                    <p>Selenium WebDriver, Cypress, REST Assured API, Mocha, Supertest, JUnit, JMeter, TestNG, Cucumber, Gherkin, Appium 2.0, WebdriverIO, Espresso</p>
+                </div>
+                <div class="skill-group">
+                    <h4>Desenvolvimento</h4>
+                    <p>Java, Spring Framework, Hibernate, Python, C#, HTML5, CSS3, Angular, JavaScript, TypeScript, Kotlin</p>
+                </div>
+                <div class="skill-group">
+                    <h4>Bancos de Dados</h4>
+                    <p>MySQL, PostgreSQL, Microsoft SQL Server, Oracle Database, Redis</p>
+                </div>
+                <div class="skill-group">
+                    <h4>Ferramentas & Metodologias</h4>
+                    <p>IntelliJ IDEA, Eclipse, VS Code, Postman API, Jira, Confluence, Bamboo, Android Studio, Jenkins, CI/CD, Agile, Kanban, Scrum</p>
+                </div>
+                <div class="skill-group">
+                    <h4>Tecnologias Emergentes</h4>
+                    <p>Playwright, AWS & GCP</p>
+                </div>
+                <div class="skill-group">
+                    <h4>Soft Skills</h4>
+                    <p>Communication, Analytical Skills, Attention to Detail, Leadership</p>
+                </div>
+                <div class="skill-group">
+                    <h4>Idiomas</h4>
+                    <p>Inglês, Português, Espanhol</p>
+                </div>
+            </section>
+        </section>
+
+        <section class="content-area">
+            <section class="experience section">
+                <h3><i class="fas fa-briefcase icon"></i> Experiência Profissional</h3>
+
+                <div class="job-entry">
+                    <h4>QA TESTER</h4>
+                    <p class="company">BMM Testlabs, Dieppe, New Brunswick. <span class="dates">2025 - Atual</span></p>
+                    <ul>
+                        <li>Trabalhei em estreita colaboração com equipes para garantir o alinhamento com os padrões jurisdicionais.</li>
+                        <li>Conduzi testes de funcionalidade, usabilidade e regressão para produtos de jogos.</li>
+                        <li>Verifiquei configurações de software em várias plataformas de hardware.</li>
+                        <li>Testei sistemas de jogos de loteria para atender aos requisitos do cliente e do sistema.</li>
+                        <li>Revisei e forneci feedback sobre mais de 500 casos de teste para melhorar a clareza e eficácia.</li>
+                    </ul>
+                </div>
+
+                <div class="job-entry">
+                    <h4>INTEGRATION & MIGRATION SPECIALIST (QA | SOFTWARE DEVELOPMENT)</h4>
+                    <p class="company">Cloud and More (Projects for client digital ecosystem enhancement), Moncton, New Brunswick. <span class="dates">2022 - 2023</span></p>
+                    <ul>
+                        <li>Colaborei no desenvolvimento e validação de casos de teste para projetos de integração e migração, garantindo a precisão dos dados e a funcionalidade do sistema.</li>
+                        <li>Identifiquei e resolvi problemas críticos de integração durante o desenvolvimento, prevenindo potencial tempo de inatividade e garantindo uma experiência de usuário tranquila.</li>
+                        <li>Criei planos de teste e casos de teste abrangentes, garantindo cobertura completa e melhoria na qualidade do software.</li>
+                        <li>Forneci mentoria a um colega de QA, orientando-o no desenvolvimento e implementação de estratégias de teste eficazes, incluindo unit testing, API testing e exploratory testing.</li>
+                    </ul>
+                </div>
+
+                <div class="job-entry">
+                    <h4>QA | SOFTWARE DEVELOPER</h4>
+                    <p class="company">NTT DATA Business Solutions (Brazil) (Large IT consulting company), Curitiba, Brazil. <span class="dates">2020 - 2022</span></p>
+                    <ul>
+                        <li>Realizei User Acceptance Testing (UAT), garantindo que as soluções atendessem aos requisitos do usuário.</li>
+                        <li>Otimizei processos para melhorar a eficiência e produtividade, alcançando resultados financeiros e operacionais significativos.</li>
+                        <li>Melhorei aplicativos front-end usando Angular CLI, HTML, CSS, e Java, aprimorando os fluxos de trabalho do usuário.</li>
+                        <li>Utilizei RESTful APIs, serviços SOAP, e protocolo OData para fornecer documentação do usuário passo a passo.</li>
+                    </ul>
+                </div>
+
+                <div class="job-entry">
+                    <h4>TEST ANALYST</h4>
+                    <p class="company">Velti Technology (Provider of mobile marketing and advertising services), Curitiba, Brazil. <span class="dates">2014 - 2019</span></p>
+                    <ul>
+                        <li>Desenvolvi scripts de automação interna e ferramentas em Python e Java para acelerar ciclos de regressão e melhorar a confiabilidade dos testes.</li>
+                        <li>Construí automação de testes para camadas de API e UI usando Cypress e REST Assured.</li>
+                        <li>Familiarizado com o uso de métricas de teste para identificar padrões de qualidade, informar análise de risco e melhorar a cobertura de teste.</li>
+                        <li>Forneci expertise em QA durante o desenvolvimento de pacotes de consultoria, garantindo funcionalidade e usabilidade através de testes com JUnit, JMeter, e Selenium WebDriver.</li>
+                        <li>Desenvolvi e mantive um repositório de testes abrangente, garantindo validação completa e documentação clara de defeitos.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="projects section">
+                <h3><i class="fas fa-laptop-code icon"></i> Projetos e Outros</h3>
+                
+                <div class="project-entry">
+                    <h4>Task Manager Plus UI</h4>
+                    <p class="description">Sistema de gerenciamento de tarefas baseado na web desenvolvido usando Angular, TypeScript, e integrado com APIs (não implementado devido a custos).</p>
+                    <p class="link"><i class="fab fa-github icon"></i> <a href="https://github.com/maiconfang/taskmanagerplus-ui" target="_blank">Explorar no GitHub</a></p>
+                </div>
+                
+                <div class="project-entry">
+                    <h4>Canal do YouTube: Maicon Fang IT and Quality Assurance</h4>
+                    <p class="description">Compartilhando conhecimento em automação de testes e desenvolvimento de software.</p>
+                    <ul>
+                        <li>Vídeos tutoriais sobre Selenium WebDriver, Cypress, Java, TestNG, BDD com Cucumber, e mais.</li>
+                        <li>Guias passo a passo sobre construção de scripts de teste automatizados e integração de frameworks.</li>
+                        <li>Tem como objetivo ajudar profissionais de QA e desenvolvedores a aprimorarem suas habilidades de automação de testes.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="education section">
+                <h3><i class="fas fa-graduation-cap icon"></i> Formação Acadêmica</h3>
+                
+                <div class="education-entry">
+                    <h4>Professional Master's Degree in Software Engineering</h4>
+                    <p class="institution">Federal University of Paraná, Curitiba, Brazil. <span class="dates">2014</span></p>
+                </div>
+
+                <div class="education-entry">
+                    <h4>Bachelor's Degree in Information Systems</h4>
+                    <p class="institution">Dinâmica das Cataratas University Centre, Cataratas do Iguaçu, Brazil. <span class="dates">2010</span></p>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Maicon Fang. Desenvolvido com HTML & CSS.</p>
+    </footer>
+</body>
+</html>
